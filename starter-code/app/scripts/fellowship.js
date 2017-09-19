@@ -115,8 +115,11 @@ function beautifulStranger() {
 
 // Part 6
 
+var hobbitsMove = shire.querySelector('ul');
+
 function leaveTheShire() {
   // assemble the hobbits and move them to Rivendell
+rivendell.appendChild(hobbitsMove);
 }
 
 
