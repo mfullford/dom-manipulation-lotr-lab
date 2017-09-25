@@ -3,17 +3,20 @@
 <head>
   <meta charset="utf-8">
   <title>The Fellowship of the Ring</title>
+  <!-- Reference the stylesheet -->
   <link rel="stylesheet" href="./stylesheets/style.css">
-</head>
-<body>
-  <div class="overlay">
-  </div>
-  <audio id="nazgul-screech" src="./media/nazgul_screech.mp3"></audio>
-  <script charset="utf-8">
-    function nazgulScreech(){
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <!-- Audio tag -->
+    <audio id="nazgul-screech" src="./media/nazgul_screech.mp3"></audio>
+    <!-- Add the actual audio function -->
+    <script charset="utf-8">
+      function nazgulScreech(){
       document.getElementById("nazgul-screech").play();
     }
-  </script>
-  <script src="./scripts/fellowship.js"></script>
-</body>
+    </script>
+    <!-- Make sure to tag the javascript file to link the two files -->
+    <script src="./scripts/fellowship.js"></script>
+  </body>
 </html>

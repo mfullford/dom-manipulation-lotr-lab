@@ -89,29 +89,27 @@ function keepItSecretKeepItSafe() {
 function makeBuddies() {
   // create an aside tag
   var aside = document.createElement('aside');
-  for(var i = 0, len = buddies.length; i < len; i++){
-    // attach an unordered list of the 'buddies' in the aside
+  var listBuddy = document.createElement('ul');   //had to define listBuddy! 
+  for (i=0; i < buddies.length; i++) {
     var buddy = document.createElement('li');
-    buddy.textContent = buddies[i];
-    buddyList.appendChild(buddy);
+    buddy.innerHTML = buddies[i];
+    listBuddy.appendChild(buddy);    //theeeen you can append
   }
-  // insert your aside as a child element of rivendell
-   aside.appendChild(buddyList);
+  aside.appendChild(listBuddy);
   rivendell.appendChild(aside);
 }
-  makeBuddies();
 
-  var strider = rivendell.querySelectorAll('li')[3];
 
 // Part 5
 
+var strider = rivendell.querySelectorAll('li')[3];   //define Strider [3]
 
 function beautifulStranger() {
-  // change the 'Strider' textnode to 'Aragorn'
-  strider.textContent = 'Aragon';
-}
+// change the 'Strider' textnode to 'Aragorn'
 
-  beautifulStranger();
+document.getElementsByTagName()[3].innerHTML = "Aragorn";   // call [3] and change the text
+
+beautifulStranger();
 
 // Part 6
 
