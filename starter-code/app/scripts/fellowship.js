@@ -107,13 +107,13 @@ var strider = rivendell.querySelectorAll('li')[3];   //define Strider [3]
 function beautifulStranger() {
 // change the 'Strider' textnode to 'Aragorn'
 
-document.getElementsByTagName()[3].innerHTML = "Aragorn";   // call [3] and change the text
+document.getElementsByTagName('li')[3].innerHTML = "Aragorn";}  // call [3] and change the text
 
 beautifulStranger();
 
 // Part 6
 
-var hobbitsMove = shire.querySelector('ul');
+var hobbitsMove = theShire.querySelector('ul');
 
 function leaveTheShire() {
   // assemble the hobbits and move them to Rivendell
